@@ -3,7 +3,7 @@
   require_once('html_functions.php');
 
   $dbhost  = '127.0.0.1';
-  $dbname  = 'CS4331-TOY-APPLICATION';
+  $dbname  = 'TTU4354satellitemap';
   $dbuser  = 'root';
   $dbpass  = '';
 
