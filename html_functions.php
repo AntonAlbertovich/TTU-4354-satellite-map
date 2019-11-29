@@ -1,5 +1,4 @@
 <?php
-
 $end_html = <<<__END
           </div>
         </div>
@@ -7,7 +6,6 @@ $end_html = <<<__END
       </body>
     </html>
 __END;
-
 $guest_sidebar = <<< __GUEST_SIDEBAR
     <div class="list-group">
       <a href="index.php" class="list-group-item">Home</a>
@@ -15,9 +13,7 @@ $guest_sidebar = <<< __GUEST_SIDEBAR
       <a href="login.php" class="list-group-item">Login</a>
     </div>
 __GUEST_SIDEBAR;
-
 $admin_sidebar = <<< __ADMIN_SIDEBAR
-
     <div class="list-group">
       <a href="members.php" class="list-group-item">Manage Members</a>
       <a href="board.php" class="list-group-item">View Messages</a>
@@ -25,11 +21,8 @@ $admin_sidebar = <<< __ADMIN_SIDEBAR
       <a href="search.php" class="list-group-item">Search Satellites</a>
       <a href="logout.php" class="list-group-item">Logout</a>
     </div>
-
 __ADMIN_SIDEBAR;
-
 $user_sidebar = <<< __USER_SIDEBAR
-
     <div class="list-group">
       <a href="board.php" class="list-group-item">View All Satellites</a>
       <a href="post-message.php" class="list-group-item">Add New Satellite</a>
@@ -42,13 +35,9 @@ $user_sidebar = <<< __USER_SIDEBAR
       <a href="search.php" class="list-group-item">Search Expected Satellite Lifespands</a>
       <a href="search.php" class="list-group-item">Search Contractors</a>
       <a href="search.php" class="list-group-item">Search Launch Sites</a>
-      <a href="logout.php" class="list-group-item">Logout</a>
     </div>
-
 __USER_SIDEBAR;
-
 $members_table_head = <<<__MEMBERS_TABLE_HEAD
-
 <table class="table table-striped">
 <thead class="thead-light">
 <tr>
@@ -61,12 +50,8 @@ $members_table_head = <<<__MEMBERS_TABLE_HEAD
 </tr>
 </thead>
 <tbody>
-
 __MEMBERS_TABLE_HEAD;
-
-
 $login_form = <<< __FORM
-
   <div class="card my-4">
     <h5 class="card-header">Please Sign In:</h5>
     <div class="card-body">
@@ -82,11 +67,8 @@ $login_form = <<< __FORM
       </form>
     </div>
   </div>
-
 __FORM;
-
 $signup_form = <<< __SIGNUP_FORM
-
   <div class="card my-4">
     <h5 class="card-header">Please Sign Up:</h5>
     <div class="card-body">
@@ -120,11 +102,8 @@ $signup_form = <<< __SIGNUP_FORM
       </form>
     </div>
   </div>
-
 __SIGNUP_FORM;
-
 $password_form = <<< __PASSWORD_FORM
-
   <div class="card my-4">
     <h5 class="card-header">Change Your Password:</h5>
     <div class="card-body">
@@ -146,11 +125,8 @@ $password_form = <<< __PASSWORD_FORM
       </form>
     </div>
   </div>
-
 __PASSWORD_FORM;
-
 $post_form = <<< __POST_FORM
-
   <div class="card my-4">
     <h5 class="card-header">Post Message:</h5>
     <div class="card-body">
@@ -163,11 +139,8 @@ $post_form = <<< __POST_FORM
       </form>
     </div>
   </div>
-
 __POST_FORM;
-
 $search_form = <<< __SEARCH_FORM
-
   <div class="row">
       <form method="get">
       <div class="input-group">
@@ -178,5 +151,4 @@ $search_form = <<< __SEARCH_FORM
       </div>
       </form>
   </div>
-
 __SEARCH_FORM;
