@@ -26,15 +26,15 @@ $user_sidebar = <<< __USER_SIDEBAR
     <div class="list-group">
       <a href="board.php" class="list-group-item">View All Satellites</a>
       <a href="post-message.php" class="list-group-item">Add New Satellite</a>
-      <a href="search.php" class="list-group-item">Search Names of Satellites</a>
-      <a href="search.php" class="list-group-item">Search Operator Countires</a>
-      <a href="search.php" class="list-group-item">Search Satellite Owners</a>
-      <a href="search.php" class="list-group-item">Search Users</a>
-      <a href="search.php" class="list-group-item">Search Purposes</a>
-      <a href="search.php" class="list-group-item">Search Launch dates</a>
-      <a href="search.php" class="list-group-item">Search Expected Satellite Lifespands</a>
-      <a href="search.php" class="list-group-item">Search Contractors</a>
-      <a href="search.php" class="list-group-item">Search Launch Sites</a>
+      <a href="search_user_id.php" class="list-group-item">Search Names of Satellites</a>
+      <a href="search_Country_of_Operator_Owner.php" class="list-group-item">Search Operator Countries</a>
+      <a href="search_Operator_Owner.php" class="list-group-item">Search Satellite Owners</a>
+      <a href="search_Users.php" class="list-group-item">Search Users</a>
+      <a href="search_Purpose.php" class="list-group-item">Search Purposes</a>
+      <a href="search_Date_of_Launch.php" class="list-group-item">Search Launch dates</a>
+      <a href="search_Expected_Lifetime_yrs.php" class="list-group-item">Search Expected Satellite Lifespands (years)</a>
+      <a href="search_Contractor.php" class="list-group-item">Search Contractors</a>
+      <a href="search_Launch_Site.php" class="list-group-item">Search Launch Sites</a>
     </div>
 __USER_SIDEBAR;
 $members_table_head = <<<__MEMBERS_TABLE_HEAD
