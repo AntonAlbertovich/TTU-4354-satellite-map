@@ -1,11 +1,8 @@
 <?php
   session_start();
   require_once('functions.php');
-
   echo <<<_HEADER
-
   <html lang='en'>
-
     <head>
       <meta charset='utf-8'>
       <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
@@ -15,17 +12,15 @@
       <link href='css/bootstrap.min.css' rel='stylesheet'>
       <link href='css/custom.css' rel='stylesheet'>
     </head>
-
     <body>
+	<script>document.body.style.backgroundImage = " url(https://steamuserimages-a.akamaihd.net/ugc/772778501267616228/943896502CE7357163BDEF5F6ACDFD24DB3D2015/)";
+			document.body.style.backgroundRepeat = "repeat";
+			document.body.style.backgroundSize = "auto";
+	</script>
       <nav class='navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top'>
         <div class='container'>
           <a class='navbar-brand' href='index.php'> TTU-4354-satellite-map </a>
-
 _HEADER;
-
-
-
-
 echo <<<_HEADER_MORE
           </div>
         </div>
@@ -34,9 +29,7 @@ echo <<<_HEADER_MORE
       <div class='container'>
         <div class="row">
             <div class="col-lg-3 mb-4" id="sidebar">
-
 _HEADER_MORE;
-
       if (checkIfLoggedIn()) {
         $user = $_SESSION['user'];
         if (checkIfAdmin())
@@ -46,6 +39,5 @@ _HEADER_MORE;
       } else {
         echo $guest_sidebar;
       }
-
 echo '</div>';
 echo '<div class="col-lg-9 mb-4" id="main_content">';
