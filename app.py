@@ -99,11 +99,11 @@ app.layout = html.Div(children = [
 def update_graph(orbit):
     fig = go.Figure()
     orbit = str(orbit).strip('[]')
-    print(orbit)
-    graph_query = 'SELECT Apogee_km, Perigee_km, Class_of_Orbit FROM orbit_table WHERE Class_of_Orbit = {} LIMIT 5'.format(orbit)
-    print(graph_query)
-    results = query(graph_query)
-    plot_ellipsis(results,fig)
+    if orbit != 'MTL':
+        graph_query = 'SELECT Apogee_km, Perigee_km, Class_of_Orbit FROM orbit_table WHERE Class_of_Orbit = {} LIMIT 5'.format(orbit)
+        print(graph_query)
+        results = query(graph_query)
+        plot_ellipsis(results,fig)
     return fig
 
 if __name__ == '__main__':
