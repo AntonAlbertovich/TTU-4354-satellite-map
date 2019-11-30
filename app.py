@@ -10,10 +10,10 @@ import mysql.connector
 
 # Get access to the database
 mydb = mysql.connector.connect(
-     host="localhost",
+    host="127.0.0.1",
     user="root",
-    passwd="Q.E.D.",
-    database="satellite"
+    passwd="",
+    database="TTU4354satellitemap"
 )
 
 # Query the database with the sql string and return the result
@@ -99,6 +99,7 @@ app.layout = html.Div(children = [
 def update_graph(orbit):
     fig = go.Figure()
     orbit = str(orbit).strip('[]')
+    print(orbit)
     graph_query = 'SELECT Apogee_km, Perigee_km, Class_of_Orbit FROM orbit_table WHERE Class_of_Orbit = {} LIMIT 5'.format(orbit)
     print(graph_query)
     results = query(graph_query)
