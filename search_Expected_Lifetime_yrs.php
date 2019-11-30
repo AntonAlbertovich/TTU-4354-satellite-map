@@ -33,8 +33,6 @@
 	echo '<div class="card mb-4">';
           echo '<div class="card-header "><p>'  .   make_clickable($row['user_id']). '</p></div>';
         echo '<div class="card-body">';
-
-          echo '<div class="card-body">';
           echo '<p class="card-text">' . 'Country ' . make_clickable($row['Country_Org_of_UN_Registry']) .  ' -- ' . make_clickable($row['Country_of_Operator_Owner']) . '!' . make_clickable($row['Operator_Owner']) . ' ' . make_clickable($row['Users']) .  ' ' . make_clickable($row['Purpose']) . ' ' . make_clickable($row['Date_of_Launch']) . ' ' . make_clickable($row['Expected_Lifetime_yrs']) .  ' ' . make_clickable($row['Contractor']) . ' ' . make_clickable($row['Country_of_Contractor']) .  ' ' . make_clickable($row['Launch_Site']) . ' ' .  '</p></div></div>';
 
         }
