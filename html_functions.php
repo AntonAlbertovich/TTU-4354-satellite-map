@@ -1,5 +1,4 @@
 <?php
-
 $end_html = <<<__END
           </div>
         </div>
@@ -7,7 +6,6 @@ $end_html = <<<__END
       </body>
     </html>
 __END;
-
 $guest_sidebar = <<< __GUEST_SIDEBAR
     <div class="list-group">
       <a href="index.php" class="list-group-item">Home</a>
@@ -15,20 +13,15 @@ $guest_sidebar = <<< __GUEST_SIDEBAR
       <a href="login.php" class="list-group-item">Login</a>
     </div>
 __GUEST_SIDEBAR;
-
 $admin_sidebar = <<< __ADMIN_SIDEBAR
-
     <div class="list-group">
       <a href="members.php" class="list-group-item">Manage Members</a>
       <a href="board.php" class="list-group-item">View Messages</a>
       <a href="search.php" class="list-group-item">Search Satellites</a>
       <a href="logout.php" class="list-group-item">Logout</a>
     </div>
-
 __ADMIN_SIDEBAR;
-
 $user_sidebar = <<< __USER_SIDEBAR
-
     <div class="list-group">
       <a href="board.php" class="list-group-item">View All Satellites</a>
       <a href="search_2.php" class="list-group-item">Search 2 Countries </a>
@@ -41,12 +34,11 @@ $user_sidebar = <<< __USER_SIDEBAR
       <a href="search_Expected_Lifetime_yrs.php" class="list-group-item">Search Expected Satellite Lifespands (years)</a>
       <a href="search_Contractor.php" class="list-group-item">Search Contractors</a>
       <a href="search_Launch_Site.php" class="list-group-item">Search Launch Sites</a>
+	  <a href="search_Orbit_info.php" class="list-group-item"> Orbit Info</a>
+	  <a href="apogee_visual.php" class="list-group-item"> Apogee Visual</a>
     </div>
-
 __USER_SIDEBAR;
-
 $members_table_head = <<<__MEMBERS_TABLE_HEAD
-
 <table class="table table-striped">
 <thead class="thead-light">
 <tr>
@@ -59,12 +51,8 @@ $members_table_head = <<<__MEMBERS_TABLE_HEAD
 </tr>
 </thead>
 <tbody>
-
 __MEMBERS_TABLE_HEAD;
-
-
 $login_form = <<< __FORM
-
   <div class="card my-4">
     <h5 class="card-header">Please Sign In:</h5>
     <div class="card-body">
@@ -80,11 +68,8 @@ $login_form = <<< __FORM
       </form>
     </div>
   </div>
-
 __FORM;
-
 $signup_form = <<< __SIGNUP_FORM
-
   <div class="card my-4">
     <h5 class="card-header">Please Sign Up:</h5>
     <div class="card-body">
@@ -118,11 +103,8 @@ $signup_form = <<< __SIGNUP_FORM
       </form>
     </div>
   </div>
-
 __SIGNUP_FORM;
-
 $password_form = <<< __PASSWORD_FORM
-
   <div class="card my-4">
     <h5 class="card-header">Change Your Password:</h5>
     <div class="card-body">
@@ -144,16 +126,12 @@ $password_form = <<< __PASSWORD_FORM
       </form>
     </div>
   </div>
-
 __PASSWORD_FORM;
-
 $search_form2 = <<< __SEARCH_FORM2
-
 	<form>
   <button type="submit" class="btn btn-primary">Submit</button>
 <div class="card text-white bg-success">
 <h5 class="card-title">Country 1</h5>
-
   <select class="form-control" select id="country_1" name="country_1" >
    		<option selected="selected" value=""></opt
                 <option value="Afghanistan">Afghanistan</option>
@@ -386,7 +364,7 @@ $search_form2 = <<< __SEARCH_FORM2
                 <option value="Ukraine">Ukraine</option>
                 <option value="United Arab Emirates">United Arab Emirates</option>
                 <option value="United Kingdom">United Kingdom</option>
-                <option value="United States">United States</option>
+                <option value="USA">United States</option>
                 <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
                 <option value="Uruguay">Uruguay</option>
                 <option value="Uzbekistan">Uzbekistan</option>
@@ -642,7 +620,7 @@ $search_form2 = <<< __SEARCH_FORM2
                 <option value="Ukraine">Ukraine</option>
                 <option value="United Arab Emirates">United Arab Emirates</option>
                 <option value="United Kingdom">United Kingdom</option>
-                <option value="United States">United States</option>
+                <option value="USA">United States</option>
                 <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
                 <option value="Uruguay">Uruguay</option>
                 <option value="Uzbekistan">Uzbekistan</option>
@@ -664,19 +642,12 @@ $search_form2 = <<< __SEARCH_FORM2
         <input type="text" class="form-control" placeholder="Search for..." name="oper2">
       </div>
       </form>
-
-
   </div>
-
 </form>
-
 __SEARCH_FORM2;
-
 $search_form = <<< __SEARCH_FORM
-
 	<div class="card bg-danger text-white">
 	    <h4 class="card-title">Card title</h4>
-
       <form method="get">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search for..." name="q">
@@ -686,5 +657,5 @@ $search_form = <<< __SEARCH_FORM
       </div>
       </form>
   </div>
-
 __SEARCH_FORM;
+?>
