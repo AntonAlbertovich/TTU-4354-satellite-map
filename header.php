@@ -2,7 +2,6 @@
   session_start();
   require_once('functions.php');
   echo <<<_HEADER
-
   <html lang='en'>
     <head>
       <meta charset='utf-8'>
@@ -14,11 +13,11 @@
       <link href='css/custom.css' rel='stylesheet'>
     </head>
     <body>
-	<script>document.body.style.backgroundImage = " url(https://steamuserimages-a.akamaihd.net/ugc/772778501267616228/943896502CE7357163BDEF5F6ACDFD24DB3D2015/)";
+	<script>document.body.style.backgroundImage = " url(https://backgrounddownload.com/wp-content/uploads/2018/09/star-gif-tumblr-background-2.gif)";
 			document.body.style.backgroundRepeat = "repeat";
 			document.body.style.backgroundSize = "auto";
 	</script>
-      <nav class='navbar navbar-expand-lg navbar-light bg-warning'>
+      <nav class='navbar navbar-expand-lg bg-white'>
         <div class='container'>
           <a class='navbar-brand' href='index.php'> TTU 4354 Satellite Map </a>
 _HEADER;
