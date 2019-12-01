@@ -17,9 +17,10 @@
 			document.body.style.backgroundRepeat = "repeat";
 			document.body.style.backgroundSize = "auto";
 	</script>
-      <nav class='navbar navbar-expand-lg bg-white'>
+      
         <div class='container'>
-          <a class='navbar-brand' href='index.php'> TTU 4354 Satellite Map </a>
+          
+		  <h2><i><font color="white">TTU 4354 Satellite Map </font> </i></h2>
 _HEADER;
 echo <<<_HEADER_MORE
           </div>
