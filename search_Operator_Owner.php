@@ -15,7 +15,7 @@
 
       $q = $_GET['q'];
 
-      $result = queryMySQL("SELECT * FROM messages WHERE LOWER(Operator_Owner) LIKE '%$q%'");
+      $result = queryMySQL("SELECT * FROM main_table WHERE LOWER(Operator_Owner) LIKE '%$q%'");
       $num = $result->num_rows;
 
       echo '<h2><i>Search Owners ' . $q . '</i></h2>';

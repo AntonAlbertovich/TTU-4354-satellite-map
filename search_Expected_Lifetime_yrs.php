@@ -15,7 +15,7 @@
 
       $q = $_GET['q'];
 
-      $result = queryMySQL("SELECT * FROM messages WHERE LOWER(Expected_Lifetime_yrs) LIKE '%$q%'");
+      $result = queryMySQL("SELECT * FROM main_table WHERE LOWER(Expected_Lifetime_yrs) LIKE '%$q%'");
       $num = $result->num_rows;
 
       echo '<h2><i>Search Expected Lifetime in years' . $q . '</i></h2>';

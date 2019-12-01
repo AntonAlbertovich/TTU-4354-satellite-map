@@ -15,7 +15,7 @@
 
       $q = $_GET['q'];
 
-      $result = queryMySQL("SELECT * FROM messages WHERE LOWER(Date_of_Launch) LIKE '%$q%'");
+      $result = queryMySQL("SELECT * FROM main_table WHERE LOWER(Date_of_Launch) LIKE '%$q%'");
       $num = $result->num_rows;
 
       echo '<h2><i>Search Date of Launch ' . $q . '</i></h2>';

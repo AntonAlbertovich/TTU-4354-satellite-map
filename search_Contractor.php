@@ -15,7 +15,7 @@
 
       $q = $_GET['q'];
 
-      $result = queryMySQL("SELECT * FROM messages WHERE LOWER(Contractor) LIKE '%$q%'");
+      $result = queryMySQL("SELECT * FROM main_table WHERE LOWER(Contractor) LIKE '%$q%'");
       $num = $result->num_rows;
 
       echo '<h2><i>Search Contractors' . $q . '</i></h2>';

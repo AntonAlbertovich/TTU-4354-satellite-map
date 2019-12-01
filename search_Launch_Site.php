@@ -15,7 +15,7 @@
 
       $q = $_GET['q'];
 
-      $result = queryMySQL("SELECT * FROM messages WHERE LOWER(Launch_Site) LIKE '%$q%'");
+      $result = queryMySQL("SELECT * FROM main_table WHERE LOWER(Launch_Site) LIKE '%$q%'");
       $num = $result->num_rows;
 
       echo '<h2><i>Search Launch Site ' . $q . '</i></h2>';

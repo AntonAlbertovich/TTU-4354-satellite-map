@@ -15,7 +15,7 @@
 
       $q = $_GET['q'];
 
-      $result = queryMySQL("SELECT * FROM messages WHERE LOWER(Purpose) LIKE '%$q%'");
+      $result = queryMySQL("SELECT * FROM main_table WHERE LOWER(Purpose) LIKE '%$q%'");
       $num = $result->num_rows;
 
       echo '<h2><i>Search Purposes ' . $q . '</i></h2>';

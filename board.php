@@ -8,19 +8,19 @@
       if ($_GET['action'] == "delete") {
         $message_id = $_GET['id'];
         if (checkIfAdmin()) {
-          queryMysql("DELETE FROM messages WHERE id='$message_id'");
+          queryMysql("DELETE FROM main_table WHERE id='$message_id'");
         }
         else {
-          queryMysql("DELETE FROM messages WHERE user_id='$user' AND id='$message_id'");
+          queryMysql("DELETE FROM main_table WHERE user_id='$user' AND id='$message_id'");
         }
         echo '<div class="alert alert-danger" role="alert">Message has been deleted.</div>';
       }
     }
-    $query  = "SELECT * FROM messages ORDER BY time DESC";
+    $query  = "SELECT * FROM main_table ORDER BY time DESC";
     $result = queryMysql($query);
     $num    = $result->num_rows;
     if (!$num) {
-      echo '<div class="alert alert-danger" role="alert">No messages yet.</div>';
+      echo '<div class="alert alert-danger" role="alert">No main_table yet.</div>';
     } else {
       for ($j = 0 ; $j < $num ; ++$j)
       {

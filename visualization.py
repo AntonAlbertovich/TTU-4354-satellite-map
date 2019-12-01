@@ -6,10 +6,14 @@ import mysql.connector
 
 # Get access to the database
 mydb = mysql.connector.connect(
-     host="localhost",
+    # host="localhost",
+    #user="root",
+    #passwd="Q.E.D.",
+    #database="satellite"
+     host="127.0.0.1",
     user="root",
-    passwd="Q.E.D.",
-    database="satellite"
+    passwd="",
+    database="TTU4354satellitemap"
 )
 
 # Query the database with the sql string and return the result
@@ -42,10 +46,22 @@ def plot_ellipsis(results,fig):
     for r in results:
 
         # Random points along the x axis
-        t = np.linspace(-r[0],r[0],500)
+
+        value_0 = r[0] 
+
+        value_1 = r[1]
+
+        value_2 = r[0]
+
+        value_0 = int(value_0 or 0)
+        value_1 = int(value_1 or 0)
+        value_2 = int(value_2 or 0)
+        value_2 = -value_2
+
+        t = np.linspace(value_2,value_0,500)
 
         # Get crresponding y values
-        y = v_ellipse_equation(r[0], r[1], t)
+        y = v_ellipse_equation(value_0, value_1, t)
 
         # Get other posible y-value due to sqrt 
         new_vals = [-1*x for x in y]

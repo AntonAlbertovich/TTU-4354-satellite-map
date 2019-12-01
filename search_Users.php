@@ -15,7 +15,7 @@
 
       $q = $_GET['q'];
 
-      $result = queryMySQL("SELECT * FROM messages WHERE LOWER(Users) LIKE '%$q%'");
+      $result = queryMySQL("SELECT * FROM main_table WHERE LOWER(Users) LIKE '%$q%'");
       $num = $result->num_rows;
 
       echo '<h2><i>Search Users ' . $q . '</i></h2>';
