@@ -28,13 +28,13 @@
         echo '<div class="card mb-4">';
           echo '<div class="card-header "><p>'  .   make_clickable($row['user_id']). '</p></div>';
 	echo '<div class="card-body">';
-                  echo '<p class="card-text">' . 'Country ' . make_clickable($row['Country_Org_of_UN_Registry']) .  ' -- ' . make_clickable($row['Country_of_Operator_Owner']) . '!' . make_clickable($row['Operator_Owner']) . ' ' . make_clickable($row['Users']) .  ' ' . make_clickable($row['Purpose']) . ' ' . make_clickable($row['Date_of_Launch']) . ' ' . make_clickable($row['Expected_Lifetime_yrs']) .  ' ' . make_clickable($row['Contractor']) . ' ' . make_clickable($row['Country_of_Contractor']) .  ' ' . make_clickable($row['Launch_Site']) . ' ' .  '</p></div></div>';
+                 echo '<p class="card-text">' . 'Country of Origin: ' . make_clickable($row['Country_Org_of_UN_Registry']) .  ' Country of Operator: ' . make_clickable($row['Country_of_Operator_Owner']) . ' Operator: ' . make_clickable($row['Operator_Owner']) . ' User: ' . make_clickable($row['Users']) .  ' Purpose: ' . make_clickable($row['Purpose']) . ' Launch Date: ' . make_clickable($row['Date_of_Launch']) . ' Life Expectancy: ' . make_clickable($row['Expected_Lifetime_yrs']) .  ' years Contractor: ' . make_clickable($row['Contractor']) . ' Country of Contractor: ' . make_clickable($row['Country_of_Contractor']) .  ' Launch Site: ' . make_clickable($row['Launch_Site']) . ' ' .  '</p></div></div>';
       }
     echo '  </tbody>
     </table>';
     }
   
-	echo '<script>document.body.style.backgroundImage = " url(https://steamuserimages-a.akamaihd.net/ugc/772778501267616228/943896502CE7357163BDEF5F6ACDFD24DB3D2015/)";
+	echo '<script>document.body.style.backgroundImage = " url(https://backgrounddownload.com/wp-content/uploads/2018/09/star-gif-tumblr-background-2.gif)";
 			document.body.style.backgroundRepeat = "repeat";
 			document.body.style.backgroundSize = "auto";
 	</script>';
