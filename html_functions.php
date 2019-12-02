@@ -905,7 +905,7 @@ __SEARCH_FORM3;
 
 $search_form = <<< __SEARCH_FORM
 	<div class="card bg-danger text-white">
-	    <h4 class="card-title">Card title</h4>
+            <h4 class="card-title">Search</h4>
       <form method="get">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search for..." name="q">
