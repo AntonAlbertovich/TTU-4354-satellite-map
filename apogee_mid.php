@@ -16,7 +16,7 @@
         echo '<div class="alert alert-danger" role="alert">Message has been deleted.</div>';
       }
     }
-    $query  = "SELECT * FROM main_table m, ID_table i, orbit_table o WHERE m.NORAD_Number = i.NORAD_Number AND i.Orbit_ID = o.Orbit_ID AND o.Apogee_km >= 700 AND o.Apogee_km >=35000 ORDER BY o.Apogee_km;";
+    $query  = "SELECT * FROM main_table m, ID_table i, orbit_table o WHERE m.NORAD_Number = i.NORAD_Number AND i.Orbit_ID = o.Orbit_ID AND o.Apogee_km >= 700 AND o.Apogee_km <=35000 ORDER BY o.Apogee_km;";
     $result = queryMysql($query);
     $num    = $result->num_rows;
     if (!$num) {
